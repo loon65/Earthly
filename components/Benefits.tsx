@@ -59,8 +59,13 @@ export const Benefits: React.FC = () => {
             </div>
 
             <div className="mt-12 pt-8 border-t border-earthly-sage/20">
-              <a href="#products" className="text-earthly-text font-medium hover:text-earthly-green transition-colors flex items-center gap-2">
-                See Nutrition Facts <span className="text-lg">→</span>
+              <a 
+                href="https://www.instagram.com/earthly_my" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-earthly-text font-medium hover:text-earthly-green transition-colors flex items-center gap-2"
+              >
+                Follow for more nutrition facts <span className="text-lg">→</span>
               </a>
             </div>
           </div>

@@ -8,7 +8,7 @@ export const products: Product[] = [
     name: "Roasted Cashew Nuts (Value Pack)",
     price: 75.00,
     weight: "1kg",
-    image: "https://images.unsplash.com/photo-1536591375315-196000ea3678?q=80&w=1974&auto=format&fit=crop",
+    image: "https://raw.githubusercontent.com/loon65/Earthly/930d5814e9acd07ae161348cc36a55c66a2f3385/Value%20Pack.png",
     rating: 5.0,
     reviews: 189,
     badge: "Best Value"
@@ -18,7 +18,7 @@ export const products: Product[] = [
     name: "Roasted Cashew Nuts",
     price: 40.00,
     weight: "500g",
-    image: "https://images.unsplash.com/photo-1596181728286-905156a0d4db?q=80&w=2070&auto=format&fit=crop",
+    image: "https://raw.githubusercontent.com/loon65/Earthly/930d5814e9acd07ae161348cc36a55c66a2f3385/Best%20Seller.png",
     rating: 4.9,
     reviews: 342,
     badge: "Bestseller"
@@ -60,14 +60,14 @@ export const ProductGrid: React.FC = () => {
               {/* Image Container */}
               <div className="relative h-80 overflow-hidden bg-earthly-bg rounded-xl mb-6 cursor-pointer" onClick={() => handleOrder(product)}>
                 {product.badge && (
-                  <span className="absolute top-4 left-4 bg-earthly-green text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm z-10">
+                  <span className="absolute top-4 left-4 bg-earthly-green text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm z-10 shadow-sm">
                     {product.badge}
                   </span>
                 )}
                 <img 
                   src={product.image} 
                   alt={product.name} 
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                  className="w-full h-full object-contain p-6 transform group-hover:scale-105 transition-transform duration-1000 ease-out"
                 />
                 {/* Minimalist Overlay */}
                 <div className="absolute inset-0 bg-earthly-text/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

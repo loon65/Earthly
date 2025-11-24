@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
               <div className="relative w-full max-w-md lg:max-w-xl">
                   <div className="absolute inset-0 bg-earthly-gold/20 blur-[80px] rounded-full scale-90"></div>
                   <img 
-                    src="https://images.unsplash.com/photo-1596181728286-905156a0d4db?q=80&w=2070&auto=format&fit=crop" 
+                    src="https://raw.githubusercontent.com/loon65/Earthly/290ab8450cb6c6e53b3693e60b3144d9146cbff0/cashew%20banner.png" 
                     alt="Earthly Roasted Cashew Nuts Banner" 
                     className="w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out rounded-2xl"
                     style={{filter: "contrast(1.05)"}}
