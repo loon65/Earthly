@@ -27,16 +27,16 @@ export const Hero: React.FC = () => {
                   <Star key={i} size={14} fill="currentColor" />
                 ))}
               </div>
-              <span className="text-sm font-medium text-earthly-text tracking-wide">Nature's Perfect Snack</span>
+              <span className="text-sm font-medium text-earthly-text tracking-wide">Rated #1 Healthy Snack in Malaysia</span>
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-bold text-earthly-text leading-[1.1]">
-              Wholesome. <br />
-              <span className="text-earthly-green italic font-serif">Fresh.</span> <span className="text-earthly-gold">Roasted.</span>
+              The Best <span className="text-earthly-green italic font-serif">Roasted</span> <br />
+              <span className="text-earthly-gold">Cashew Nuts</span> in Malaysia.
             </h1>
             
             <p className="text-lg text-stone-600 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-              Experience the pure taste of sustainably grown cashews. Sourced directly from Vietnam's finest farms to your pantry, ensuring calmness in every crunch.
+              Discover the crunch of <strong>Grade A Vietnamese Cashews</strong>. Sourced directly from Binh Phuoc farms and wood-fire roasted to perfection. The ultimate plant-based snack delivered fresh to your door in Kuala Lumpur and beyond.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -44,23 +44,24 @@ export const Hero: React.FC = () => {
                 href="#products"
                 onClick={(e) => scrollToSection(e, 'products')}
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white transition-all bg-earthly-green rounded-full hover:bg-earthly-text hover:shadow-lg hover:-translate-y-1"
+                aria-label="Order Roasted Cashews Online"
               >
-                Instant Order
+                Order Fresh Nuts
                 <ArrowRight className="ml-2" size={20} />
               </a>
               <a 
-                href="#mission"
-                onClick={(e) => scrollToSection(e, 'mission')}
+                href="#features"
+                onClick={(e) => scrollToSection(e, 'features')}
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-earthly-text transition-all bg-transparent border border-earthly-text/30 rounded-full hover:bg-earthly-sage/10 hover:border-earthly-green"
               >
-                Our Journey
+                Farm-to-Table
               </a>
             </div>
             
             <div className="pt-4 flex items-center justify-center lg:justify-start gap-6 text-sm text-stone-500 font-medium">
-                <span className="flex items-center gap-1"><Leaf size={16} className="text-earthly-green" /> Plant Based</span>
-                <span className="flex items-center gap-1"><Heart size={16} className="text-earthly-gold" /> Heart Healthy</span>
-                <span className="flex items-center gap-1"><Zap size={16} className="text-earthly-sage" /> Natural Energy</span>
+                <span className="flex items-center gap-1"><Leaf size={16} className="text-earthly-green" /> 100% Natural</span>
+                <span className="flex items-center gap-1"><Heart size={16} className="text-earthly-gold" /> Keto Friendly</span>
+                <span className="flex items-center gap-1"><Zap size={16} className="text-earthly-sage" /> Fresh Roasted</span>
             </div>
           </div>
 
@@ -74,7 +75,7 @@ export const Hero: React.FC = () => {
              </div>
              <div className="absolute bottom-20 right-0 lg:-right-4 animate-pulse z-20">
                 <div className="bg-white px-4 py-2 rounded-full shadow-md border border-earthly-sage/20 text-xs font-bold text-earthly-text">
-                   🌱 Ethically Sourced
+                   🌱 Binh Phuoc Origin
                 </div>
              </div>
 
@@ -83,7 +84,7 @@ export const Hero: React.FC = () => {
                   <div className="absolute inset-0 bg-earthly-gold/20 blur-[80px] rounded-full scale-90"></div>
                   <img 
                     src="https://raw.githubusercontent.com/loon65/Earthly/290ab8450cb6c6e53b3693e60b3144d9146cbff0/cashew%20banner.png" 
-                    alt="Earthly Roasted Cashew Nuts Banner" 
+                    alt="Premium Wood-fire Roasted Cashew Nuts Jar Earthly Malaysia - Best Healthy Snack" 
                     className="w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out rounded-2xl"
                     style={{filter: "contrast(1.05)"}}
                   />

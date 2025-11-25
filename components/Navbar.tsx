@@ -52,18 +52,18 @@ export const Navbar: React.FC = () => {
               Shop
             </a>
             <a 
+              href="#features" 
+              onClick={(e) => scrollToSection(e, 'features')}
+              className="text-earthly-text hover:text-earthly-green font-medium transition-colors"
+            >
+              Farmers
+            </a>
+            <a 
               href="#benefits" 
               onClick={(e) => scrollToSection(e, 'benefits')}
               className="text-earthly-text hover:text-earthly-green font-medium transition-colors"
             >
               Wellness
-            </a>
-            <a 
-              href="#mission" 
-              onClick={(e) => scrollToSection(e, 'mission')}
-              className="text-earthly-text hover:text-earthly-green font-medium transition-colors"
-            >
-              Farmers
             </a>
             <a 
               href="#reviews" 
@@ -105,18 +105,18 @@ export const Navbar: React.FC = () => {
               Shop
             </a>
             <a 
+              href="#features" 
+              onClick={(e) => scrollToSection(e, 'features')}
+              className="block px-3 py-3 text-base font-medium text-earthly-text hover:bg-earthly-sage/10 rounded-md"
+            >
+              Farmers
+            </a>
+            <a 
               href="#benefits" 
               onClick={(e) => scrollToSection(e, 'benefits')}
               className="block px-3 py-3 text-base font-medium text-earthly-text hover:bg-earthly-sage/10 rounded-md"
             >
               Wellness
-            </a>
-            <a 
-              href="#mission" 
-              onClick={(e) => scrollToSection(e, 'mission')}
-              className="block px-3 py-3 text-base font-medium text-earthly-text hover:bg-earthly-sage/10 rounded-md"
-            >
-              Farmers
             </a>
              <button 
               onClick={openWhatsApp}

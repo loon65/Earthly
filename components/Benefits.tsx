@@ -11,8 +11,8 @@ export const Benefits: React.FC = () => {
           <div className="lg:w-1/2 relative">
              <div className="absolute inset-0 bg-earthly-sage/20 rounded-t-[10rem] rounded-b-lg transform translate-x-4 translate-y-4"></div>
              <img 
-               src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?q=80&w=1964&auto=format&fit=crop" 
-               alt="Farmer harvesting cashews" 
+               src="https://raw.githubusercontent.com/loon65/Earthly/d968a2147460069d1f374b0dd776b1ca00b6fb9c/cashew%20nutrition.png" 
+               alt="Cashew nuts nutrition facts and health benefits" 
                className="relative rounded-t-[10rem] rounded-b-lg shadow-xl w-full object-cover h-[550px] z-10"
              />
              <div className="absolute -left-6 bottom-12 z-20 bg-white p-6 rounded-r-xl shadow-sm border-l-4 border-earthly-green max-w-xs">
@@ -32,8 +32,8 @@ export const Benefits: React.FC = () => {
                   <Heart size={20} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-earthly-text mb-1">Nutrient Dense</h4>
-                  <p className="text-stone-500 font-light">Rich in heart-healthy fats, plant protein, and essential minerals like magnesium.</p>
+                  <h4 className="text-lg font-bold text-earthly-text mb-1">Superfood Nutrition</h4>
+                  <p className="text-stone-500 font-light">Packed with **plant-based protein**, heart-healthy monounsaturated fats, and essential minerals like magnesium and zinc.</p>
                 </div>
               </div>
 
@@ -42,8 +42,8 @@ export const Benefits: React.FC = () => {
                   <Check size={20} strokeWidth={3} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-earthly-text mb-1">Sensory Delight</h4>
-                  <p className="text-stone-500 font-light">Buttery texture and rich aroma from our signature slow-roasting process.</p>
+                  <h4 className="text-lg font-bold text-earthly-text mb-1">Keto & Vegan Friendly</h4>
+                  <p className="text-stone-500 font-light">Low carb, high energy. The perfect guilt-free snack for keto diets, vegans, and active lifestyles.</p>
                 </div>
               </div>
 
@@ -53,7 +53,7 @@ export const Benefits: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-earthly-text mb-1">100% Natural</h4>
-                  <p className="text-stone-500 font-light">Non-GMO. No artificial preservatives. Just pure goodness.</p>
+                  <p className="text-stone-500 font-light">Non-GMO. No artificial preservatives. Just pure, unadulterated cashew goodness.</p>
                 </div>
               </div>
             </div>

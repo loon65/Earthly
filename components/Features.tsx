@@ -5,18 +5,18 @@ export const Features: React.FC = () => {
   const features = [
     {
       icon: <Users size={28} className="text-earthly-green" />,
-      title: "Direct Relations",
-      description: "We work directly with Vietnamese farmers, ensuring fair trade and transparency."
+      title: "Direct Farm Sourcing",
+      description: "We source directly from Binh Phuoc farmers, ensuring single-origin purity and fair trade practices."
     },
     {
       icon: <Award size={28} className="text-earthly-green" />,
-      title: "Premium Quality",
-      description: "Small-batch roasting locks in the natural sweetness and perfect crunch."
+      title: "Wood-Fire Roasted",
+      description: "Small-batch wood-fire roasting locks in the natural sweetness and delivering the perfect crunch."
     },
     {
       icon: <Leaf size={28} className="text-earthly-green" />,
-      title: "Earth First",
-      description: "Sustainable farming practices that respect the soil and future generations."
+      title: "Sustainable Agriculture",
+      description: "Our farming partners use eco-friendly methods that preserve Vietnam's rich red basalt soil."
     }
   ];
 

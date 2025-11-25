@@ -7,6 +7,7 @@ export interface Product {
   rating: number;
   reviews: number;
   badge?: string;
+  description?: string;
 }
 
 export interface CartItem extends Product {
