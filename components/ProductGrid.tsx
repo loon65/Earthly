@@ -61,6 +61,7 @@ export const ProductGrid: React.FC = () => {
                   alt={`${product.name} - Premium Roasted Cashew Nuts Malaysia - Binh Phuoc Origin`}
                   itemProp="image"
                   className="w-full h-full object-contain p-6 transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                  loading="lazy"
                 />
                 {/* Minimalist Overlay */}
                 <div className="absolute inset-0 bg-earthly-text/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -70,10 +71,12 @@ export const ProductGrid: React.FC = () => {
               <div className="flex-1 flex flex-col">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-lg font-medium text-earthly-text group-hover:text-earthly-green transition-colors" itemProp="name">{product.name}</h3>
-                  <p className="text-lg font-bold text-earthly-gold" itemProp="offers" itemScope itemType="https://schema.org/Offer">
+                  <div className="text-lg font-bold text-earthly-gold" itemProp="offers" itemScope itemType="https://schema.org/Offer">
                     <meta itemProp="priceCurrency" content="MYR" />
-                    <span itemProp="price" content={product.price.toFixed(2)}>RM {product.price.toFixed(2)}</span>
-                  </p>
+                    <meta itemProp="price" content={product.price.toFixed(2)} />
+                    <link itemProp="availability" href="https://schema.org/InStock" />
+                    <span>RM {product.price.toFixed(2)}</span>
+                  </div>
                 </div>
                 
                 <div className="flex items-center space-x-2 text-sm text-stone-400 mb-4">
@@ -83,7 +86,7 @@ export const ProductGrid: React.FC = () => {
                     <Star size={14} fill="currentColor" />
                     <span className="ml-1 text-stone-500" itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
                         <span itemProp="ratingValue">{product.rating}</span> 
-                        <span className="hidden" itemProp="reviewCount">{product.reviews}</span>
+                        <meta itemProp="reviewCount" content={product.reviews.toString()} />
                     </span>
                    </div>
                 </div>

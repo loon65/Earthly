@@ -87,6 +87,9 @@ export const Hero: React.FC = () => {
                     alt="Premium Wood-fire Roasted Cashew Nuts Jar Earthly Malaysia - Best Healthy Snack" 
                     className="w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out rounded-2xl"
                     style={{filter: "contrast(1.05)"}}
+                    loading="eager"
+                    // @ts-ignore
+                    fetchPriority="high"
                   />
               </div>
             </div>

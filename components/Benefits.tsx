@@ -14,6 +14,7 @@ export const Benefits: React.FC = () => {
                src="https://raw.githubusercontent.com/loon65/Earthly/d968a2147460069d1f374b0dd776b1ca00b6fb9c/cashew%20nutrition.png" 
                alt="Cashew nuts nutrition facts and health benefits" 
                className="relative rounded-t-[10rem] rounded-b-lg shadow-xl w-full object-cover h-[550px] z-10"
+               loading="lazy"
              />
              <div className="absolute -left-6 bottom-12 z-20 bg-white p-6 rounded-r-xl shadow-sm border-l-4 border-earthly-green max-w-xs">
                 <p className="font-serif italic text-earthly-text text-lg">"Respect the land, and it will feed you forever."</p>
