@@ -84,7 +84,7 @@ export const Hero: React.FC = () => {
                   <div className="absolute inset-0 bg-earthly-gold/20 blur-[80px] rounded-full scale-90"></div>
                   <img 
                     src="https://raw.githubusercontent.com/loon65/Earthly/290ab8450cb6c6e53b3693e60b3144d9146cbff0/cashew%20banner.png" 
-                    alt="Premium Wood-fire Roasted Cashew Nuts Jar Earthly Malaysia - Best Healthy Snack" 
+                    alt="Premium Wood-fire Roasted Cashew Nuts Jar Earthly Malaysia - Best Keto Healthy Snack" 
                     className="w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out rounded-2xl"
                     style={{filter: "contrast(1.05)"}}
                     loading="eager"

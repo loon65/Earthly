@@ -23,7 +23,7 @@ export const products: Product[] = [
     rating: 4.9,
     reviews: 342,
     badge: "Bestseller",
-    description: "Experience the superior quality of single-origin Vietnamese cashews with our Bestseller. Traditional wood-fire roasting locks in the creamy texture and natural nuttiness that mass-produced brands lack. Kept with their skins for added fiber and antioxidants, these savory gems offer an authentic farm-to-table taste. Perfect for a natural energy boost, this 500g pack is a staple for wellness enthusiasts."
+    description: "Experience the superior quality of single-origin Vietnamese cashews with our Bestseller. Traditional wood-fire roasted locks in the creamy texture and natural nuttiness that mass-produced brands lack. Kept with their skins for added fiber and antioxidants, these savory gems offer an authentic farm-to-table taste. Perfect for a natural energy boost, this 500g pack is a staple for wellness enthusiasts."
   }
 ];
 
@@ -75,6 +75,7 @@ export const ProductGrid: React.FC = () => {
                     <meta itemProp="priceCurrency" content="MYR" />
                     <meta itemProp="price" content={product.price.toFixed(2)} />
                     <link itemProp="availability" href="https://schema.org/InStock" />
+                    <link itemProp="itemCondition" href="https://schema.org/NewCondition" />
                     <span>RM {product.price.toFixed(2)}</span>
                   </div>
                 </div>
