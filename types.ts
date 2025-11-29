@@ -4,6 +4,7 @@ export interface Product {
   price: number;
   weight: string;
   image: string;
+  secondaryImage?: string;
   rating: number;
   reviews: number;
   badge?: string;

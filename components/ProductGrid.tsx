@@ -24,6 +24,30 @@ export const products: Product[] = [
     reviews: 342,
     badge: "Bestseller",
     description: "Experience the superior quality of single-origin Vietnamese cashews with our Bestseller. Traditional wood-fire roasted locks in the creamy texture and natural nuttiness that mass-produced brands lack. Kept with their skins for added fiber and antioxidants, these savory gems offer an authentic farm-to-table taste. Perfect for a natural energy boost, this 500g pack is a staple for wellness enthusiasts."
+  },
+  {
+    id: 3,
+    name: "Prosperity Gift Set (CNY Edition)",
+    price: 218.00,
+    weight: "Premium Gift Set",
+    image: "https://raw.githubusercontent.com/loon65/Earthly/f1b15d5d8e35c4ca492e0f45b4d1078eeff41909/cny-gift-set.png",
+    secondaryImage: "https://raw.githubusercontent.com/loon65/Earthly/c037648868028f8797bf5cfd17d689633e48ac42/cny-gift-set-open.png",
+    rating: 5.0,
+    reviews: 88,
+    badge: "Limited Edition",
+    description: "Elevate your Lunar New Year 2025 celebrations with our luxurious 'Xing Fu Li Yu' (Fortune & Happiness) Prosperity Gift Set. This exclusive CNY hamper features a premium bottle of Penfolds Koonunga Hill Cabernet Sauvignon, perfectly paired with three jars of our finest wood-fire roasted cashews, USA pistachios, and walnuts. Housed in an elegant, reusable red magnetic box, it is the ultimate corporate gift or gesture of abundance for family and business partners in Malaysia."
+  },
+  {
+    id: 4,
+    name: "Harmony Gift Set (6 Treasures)",
+    price: 168.00,
+    weight: "6 Premium Jars",
+    image: "https://raw.githubusercontent.com/loon65/Earthly/084b368f17ec27fb0c0600394fec5b3802f9233d/cny-gift-set-168.png",
+    secondaryImage: "https://raw.githubusercontent.com/loon65/Earthly/47bfebfb3fcc251c92065434e7a4c69fc3448bac/cny-gift-set-168-open.png",
+    rating: 5.0,
+    reviews: 56,
+    badge: "CNY Special",
+    description: "Usher in a year of abundance with the Harmony Gift Set (6 Treasures). This vibrant Chinese New Year gift box is curated to symbolize togetherness and health. It contains six premium jars: Signature Roasted Cashews, Roasted Pistachios, Walnuts, Lotus Seeds, Dried Jackfruit, and Dried Mixed Veggies. A healthy, delicious alternative to traditional hampers, beautifully packaged to impress clients, colleagues, and loved ones this festive season."
   }
 ];
 
@@ -52,19 +76,44 @@ export const ProductGrid: React.FC = () => {
               {/* Image Container */}
               <div className="relative h-80 overflow-hidden bg-earthly-bg rounded-xl mb-6 cursor-pointer" onClick={() => handleOrder(product)}>
                 {product.badge && (
-                  <span className="absolute top-4 left-4 bg-earthly-green text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm z-10 shadow-sm">
+                  <span className={`absolute top-4 left-4 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm z-10 shadow-sm ${product.badge.includes('CNY') || product.badge === 'Limited Edition' ? 'bg-red-600' : 'bg-earthly-green'}`}>
                     {product.badge}
                   </span>
                 )}
+                
+                {/* Primary Image */}
                 <img 
                   src={product.image} 
                   alt={`${product.name} - Premium Roasted Cashew Nuts Malaysia - Binh Phuoc Origin`}
                   itemProp="image"
-                  className="w-full h-full object-contain p-6 transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                  className={`absolute inset-0 w-full h-full object-contain p-6 transition-all duration-700 ease-out ${product.secondaryImage ? 'group-hover:opacity-0 scale-100' : 'group-hover:scale-105'}`}
                   loading="lazy"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    if (!target.src.includes('placehold.co')) {
+                       target.src = 'https://placehold.co/600x600/e60012/ffffff?text=Image+Unavailable';
+                    }
+                  }}
                 />
+
+                {/* Secondary Image (Hover) */}
+                {product.secondaryImage && (
+                  <img 
+                    src={product.secondaryImage}
+                    alt={`${product.name} - Inside View`}
+                    className="absolute inset-0 w-full h-full object-contain p-6 opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out scale-95 group-hover:scale-100"
+                    loading="lazy"
+                    onError={(e) => {
+                       const target = e.target as HTMLImageElement;
+                       if (!target.src.includes('placehold.co')) {
+                          target.src = 'https://placehold.co/600x600/e60012/ffffff?text=Open+Box+View';
+                       }
+                    }}
+                  />
+                )}
+
                 {/* Minimalist Overlay */}
-                <div className="absolute inset-0 bg-earthly-text/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-earthly-text/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
               </div>
 
               {/* Content */}
