@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Product } from '../types';
 import { Star, MessageCircle } from 'lucide-react';
@@ -35,7 +36,7 @@ export const products: Product[] = [
     rating: 5.0,
     reviews: 88,
     badge: "Limited Edition",
-    description: "Elevate your Lunar New Year 2025 celebrations with our luxurious 'Xing Fu Li Yu' (Fortune & Happiness) Prosperity Gift Set. This exclusive CNY hamper features a premium bottle of Penfolds Koonunga Hill Cabernet Sauvignon, perfectly paired with three jars of our finest wood-fire roasted cashews, USA pistachios, and walnuts. Housed in an elegant, reusable red magnetic box, it is the ultimate corporate gift or gesture of abundance for family and business partners in Malaysia."
+    description: "Ignite the spirit of the Lunar New Year 2026 with a gift that speaks the language of tradition and profound gratitude. Designed for heartwarming reunion dinners and prestigious corporate gestures, this luxurious set features a distinguished bottle of Penfolds Koonunga Hill Cabernet Sauvignon to toast to longevity and success. Perfectly paired with our signature wood-fire roasted cashews, savory pistachios, and premium walnuts, it comes encased in a grand red magnetic box. It is the ultimate expression of filial piety for elders and sincere appreciation for business partners, symbolizing a year of overflowing wealth and happiness."
   },
   {
     id: 4,
@@ -47,7 +48,7 @@ export const products: Product[] = [
     rating: 5.0,
     reviews: 56,
     badge: "CNY Special",
-    description: "Usher in a year of abundance with the Harmony Gift Set (6 Treasures). This vibrant Chinese New Year gift box is curated to symbolize togetherness and health. It contains six premium jars: Signature Roasted Cashews, Roasted Pistachios, Walnuts, Lotus Seeds, Dried Jackfruit, and Dried Mixed Veggies. A healthy, delicious alternative to traditional hampers, beautifully packaged to impress clients, colleagues, and loved ones this festive season."
+    description: "Capture the essence of a heartwarming family reunion with the Harmony Gift Set (6 Treasures). This vibrant collection is more than just snacks; it is a centerpiece for the living room table where stories are shared and laughter echoes. Curated to symbolize the 'Six Harmonies' of family unity and peace, it features six premium jars: our signature Wood-Fire Roasted Cashews, savory Pistachios, wholesome Walnuts, auspicious Lotus Seeds, sweet Dried Jackfruit, and crispy Mixed Veggies. A perfect, healthy gesture for visiting relatives or expressing gratitude to colleagues, inviting everyone to savor the sweetness of togetherness this Lunar New Year 2026."
   }
 ];
 
