@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://earthly.my/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/loon65/Earthly/290ab8450cb6c6e53b3693e60b3144d9146cbff0/cashew%20banner.png</image:loc>
+      <image:title>Earthly Premium Roasted Cashew Nuts Jar</image:title>
+      <image:caption>Premium wood-fire roasted cashews from Binh Phuoc, Vietnam. Keto-friendly and 100% natural.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/loon65/Earthly/930d5814e9acd07ae161348cc36a55c66a2f3385/Value%20Pack.png</image:loc>
+      <image:title>Earthly Roasted Cashew Nuts Value Pack 1kg</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/loon65/Earthly/d968a2147460069d1f374b0dd776b1ca00b6fb9c/cashew%20nutrition.png</image:loc>
+      <image:title>Cashew Nuts Nutrition Benefits</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/loon65/Earthly/f1b15d5d8e35c4ca492e0f45b4d1078eeff41909/cny-gift-set.png</image:loc>
+      <image:title>Earthly Prosperity Gift Set CNY Edition</image:title>
+      <image:caption>Luxurious Chinese New Year Gift Set with Penfolds wine and premium roasted nuts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/loon65/Earthly/084b368f17ec27fb0c0600394fec5b3802f9233d/cny-gift-set-168.png</image:loc>
+      <image:title>Earthly Harmony Gift Set 6 Treasures</image:title>
+      <image:caption>6 Treasures Harmony Gift Set for Chinese New Year featuring cashews, pistachios, and dried fruits.</image:caption>
+    </image:image>
+  </url>
+</urlset>
